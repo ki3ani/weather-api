@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Weather Forecast</title>
+  </head>
+  <body>
+    <form>
+      <label for="cityName">City name:</label>
+      <input type="text" id="cityName" required>
+      <br>
+      <label for="tempUnit">Temperature unit:</label>
+      <select id="tempUnit">
+        <option value="metric">Celsius</option>
+        <option value="imperial">Fahrenheit</option>
+      </select>
+      <br>
+      <button type="submit">Get weather</button>
+    </form>
+    <div id="weatherInfo">
+      <p id="city"></p>
+      <p id="temperature"></p>
+      <p id="description"></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
