@@ -1,0 +1,160 @@
+/* Set global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+/* Style the form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+label {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+select {
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+button[type="submit"] {
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+/* Style the weather info */
+#weatherInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Add animations for weather types */
+.cloudy {
+  animation: cloudy 3s linear infinite;
+}
+
+.rainy {
+  animation: rainy 3s linear infinite;
+}
+
+.sunny {
+  animation: sunny 3s linear infinite;
+}
+
+@keyframes cloudy {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes rainy {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes sunny {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Add styles for the city name */
+#city {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Add styles for the temperature */
+#temperature {
+  font-size: 80px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Add styles for the weather description */
+#description {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* Add styles for the weather icon */
+.weather-icon {
+  font-size: 100px;
+  margin-bottom: 20px;
+}
+
+/* Add styles for the error message */
+#error {
+  font-size: 30px;
+  color: red;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Add styles for the footer */
+footer {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+footer a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
